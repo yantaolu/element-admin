@@ -8,4 +8,4 @@
 
 ## 使用文档
 
-[element-admin文档](http://www.tf-cm.cn)
+[element-admin文档](http://el-admin.webjs.fun)

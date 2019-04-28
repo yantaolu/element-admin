@@ -25,10 +25,10 @@ const webpackConfig = merge(baseWebpackConfig, {
     app: './example/index.js'
   },
   output: {
-    path: path.resolve(__dirname, '../dist/tf/'),
+    path: path.resolve(__dirname, '../dist/el-admin/'),
     filename: 'js/[name].[chunkhash].js',
     chunkFilename: 'js/[id].[chunkhash].js',
-    publicPath: '/tf/'
+    publicPath: '/el-admin/'
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -51,7 +51,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       cssProcessorOptions: {safe: true}
     }),
     new HtmlWebpackPlugin({
-      filename: path.resolve(__dirname, '../dist/tf.html'),
+      filename: path.resolve(__dirname, '../dist/el-admin.html'),
       template: 'example/index-example.html',
       inject: true,
       minify: {
