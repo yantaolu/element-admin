@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://gitlab.tf56.lo/YantaoLu/tf-components.git"
+    "url": "https://github.com/yantaolu/element-admin.git"
   },
   "license": "MIT",
   "style": "lib/element-admin.css",
