@@ -4,7 +4,7 @@
 
 #### 更新日志
 
-1. 更名为element-admin发布到公网npm
+1. 更名为[element-admin](//www.npmjs.com/package/element-admin)发布到公网npm
 
 ---
 
