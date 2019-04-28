@@ -1,0 +1,17 @@
+.tf-routes-tree {
+  .el-tree-node__content {
+    height: auto;
+    line-height: 26px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .custom-tree-node {
+    display: flex;
+    flex-direction: column;
+
+    .button-items {
+      list-style: none;
+    }
+  }
+}

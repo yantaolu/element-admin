@@ -1,0 +1,32 @@
+.el-form.tf-query-conditions.el-form--inline {
+  height: auto;
+  overflow-x: hidden;
+  flex: none;
+
+  > .el-form-item:not(.date-range-condition) {
+    max-width: 300px;
+    width: 300px;
+    .el-form-item__content {
+      width: auto;
+    }
+    .el-select, .el-input {
+      input {
+        padding: 0 10px;
+        width: 150px;
+      }
+    }
+    .el-input-number {
+      width: 150px;
+    }
+    .el-date-editor {
+      width: auto;
+      > input {
+        padding-left: 30px;
+      }
+    }
+  }
+  .el-form-item.date-range-condition {
+    max-width: 610px;
+    width: 610px;
+  }
+}

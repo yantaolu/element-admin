@@ -1,0 +1,62 @@
+.tf-table {
+  position: relative;
+  .tf-table-header-context-menu {
+    background: #ffffff;
+    position: absolute;
+    z-index: 100;
+    padding: 10px 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 1px #dfdfdf;
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: opacity 0.3s ease-in;
+
+    ul {
+      list-style: none;
+      list-style-position: inside;
+      text-indent: 0;
+
+      li {
+        line-height: 24px;
+      }
+    }
+  }
+
+  .tf-pagination {
+    text-align: right;
+    margin: 10px 0;
+    overflow: hidden;
+
+    .el-pagination__sizes {
+      margin-left: 40px;
+    }
+  }
+
+  .tf-table-loading {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: #ccc;
+    background: rgba(200, 200, 200, 0.1);
+  }
+}
+
+.tf-table-flex {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+
+  .el-table {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    .el-table__body-wrapper {
+      flex: auto;
+    }
+  }
+}

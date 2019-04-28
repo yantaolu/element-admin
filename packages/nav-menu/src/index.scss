@@ -1,0 +1,40 @@
+.nav-menu {
+  user-select: none;
+  cursor: pointer;
+
+  .el-menu-item {
+    position: relative;
+    .add-tab-icon {
+      position: absolute;
+      padding: 10px;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+    }
+    &:hover .add-tab-icon {
+      display: block;
+    }
+    .tf-icon:not(.add-tab-icon) {
+      vertical-align: middle;
+      display: inline-block;
+      color: inherit;
+    }
+  }
+
+  .el-submenu__title > .slot-title {
+    line-height: 56px;
+    vertical-align: middle;
+    transition: color 0.3s;
+    > i {
+      vertical-align: middle;
+    }
+    > i.tf-icon {
+      color: inherit;
+    }
+  }
+
+  .el-menu-item > * {
+    vertical-align: middle;
+  }
+}

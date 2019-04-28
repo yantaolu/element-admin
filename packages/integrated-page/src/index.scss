@@ -1,0 +1,33 @@
+.tf-integrated-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .query-conditions {
+    line-height: 32px;
+    height: auto;
+
+    .el-col {
+      display: flex;
+
+      & > .el-input {
+        flex: auto;
+      }
+    }
+  }
+
+  .table-tool-bar {
+    padding-bottom: 10px;
+  }
+
+  .form-dialog .el-dialog {
+    width: 800px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    .el-dialog__body {
+      flex: auto;
+      overflow-y: auto;
+    }
+  }
+}

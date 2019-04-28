@@ -1,0 +1,211 @@
+.tf-tabs-view {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .tf-tabs-bars {
+    user-select: none;
+    border-bottom: 1px solid #dddee1;
+    overflow: hidden;
+    position: relative;
+
+    &.scroll {
+      padding: 0 30px;
+    }
+
+    .tf-tabs-nav-prev, .tf-tabs-nav-next {
+      position: absolute;
+      width: 30px;
+      line-height: 32px;
+      background-color: #ffffff;
+      text-align: center;
+      cursor: pointer;
+      z-index: 50;
+      font-size: 16px;
+      font-weight: bold;
+      &:hover {
+        color: #2d8cf0;
+      }
+    }
+
+    .tf-tabs-nav-prev {
+      left: 0;
+    }
+
+    .tf-tabs-nav-next {
+      right: 0;
+    }
+
+    .tf-tabs-bars-container {
+      list-style: none;
+      overflow: hidden;
+      white-space: nowrap;
+      float: left;
+      clear: both;
+      transition: width, background, color 0.5s ease-in-out;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .tf-tabs-contents {
+    flex: auto;
+    position: relative;
+    border: 1px solid #dddee1;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+
+  .tabs-context-menu {
+    position: absolute;
+    top: 10px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 0 0 2px 1px #dfdfdf;
+    z-index: 9999;
+
+    ul {
+      list-style: none;
+      text-indent: 0;
+      user-select: none;
+      cursor: default;
+
+      li {
+        height: 28px;
+        line-height: 28px;
+        padding: 0 10px;
+        .tf-icon {
+          margin-right: 3px;
+        }
+        &:not(.disabled):hover {
+          cursor: pointer;
+          color: #2d8cf0;
+        }
+      }
+    }
+  }
+}
+
+.tf-tab-bar {
+  display: inline-block;
+  width: auto;
+  margin: 0 4px 0 0;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 16px;
+  border: 1px solid #dddee1;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  transition: all 0.3s ease-in-out;
+  background: #f8f8f9;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+
+  label {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .el-icon-close {
+    width: 0;
+    height: 22px;
+    line-height: 22px;
+    margin-right: 0;
+    color: #999;
+    text-align: right;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+    top: -1px;
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+  }
+
+  & > .tf-icon {
+    color: inherit;
+    vertical-align: middle;
+  }
+
+  &.bar-active {
+    height: 32px;
+    background: #fff;
+    transform: translateZ(0);
+    border-color: #dddee1;
+    color: #2d8cf0;
+
+    .el-icon-close {
+      width: 14px;
+    }
+  }
+
+  &:hover {
+    color: #2d8cf0;
+    .el-icon-close {
+      width: 14px;
+    }
+  }
+}
+
+.tf-tab-pane {
+  position: absolute;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.tf-slide-fade-enter-active {
+  transition: all .4s ease;
+}
+
+.tf-slide-fade-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.tf-slide-fade-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.tf-slide-fade-leave-to {
+  opacity: 0;
+}
+
+.tf-tabs-slide-fade-enter-active {
+  transition: all .4s ease;
+}
+
+.tf-tabs-slide-fade-leave-active {
+  transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.tf-tabs-slide-fade-enter {
+  opacity: 0;
+}
+
+.tf-tabs-slide-fade-leave-to {
+  opacity: 0;
+}
+
+.tf-tab-loading {
+  height: 100%;
+  font-size: 36px;
+  color: #cccccc;
+  overflow: hidden;
+
+  .el-icon-loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
