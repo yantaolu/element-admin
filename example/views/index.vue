@@ -7,7 +7,7 @@
         <!--logo定制-->
         <slot slot="logo">
           <span class="slot-logo" :style="{width: sliderWidth + 'px'}">
-            <template v-if="!collapse">TF-View</template>
+            <template v-if="!collapse">El-Admin</template>
           </span>
         </slot>
       </custom-header>
