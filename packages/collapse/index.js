@@ -1,6 +1,6 @@
 import {Collapse} from 'element-ui'
 
 Collapse.install = function (Vue) {
-  Vue.component('TfCollapse', Collapse)
+  Vue.component('EaCollapse', Collapse)
 }
 export default Collapse

@@ -1,6 +1,6 @@
 import {Row} from 'element-ui'
 
 Row.install = function (Vue) {
-  Vue.component('TfRow', Row)
+  Vue.component('EaRow', Row)
 }
 export default Row

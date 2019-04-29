@@ -1,6 +1,6 @@
 import {TabPane} from 'element-ui'
 
 TabPane.install = function (Vue) {
-  Vue.component('TfTabPane', TabPane)
+  Vue.component('EaTabPane', TabPane)
 }
 export default TabPane

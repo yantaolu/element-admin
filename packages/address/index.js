@@ -1,7 +1,7 @@
 import Address from './src/address'
 
 Address.install = function (Vue) {
-  Vue.component('TfAddress', Address)
-  Vue.component('TfAddr', Address)
+  Vue.component('EaAddress', Address)
+  Vue.component('EaAddr', Address)
 }
 export default Address

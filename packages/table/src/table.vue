@@ -17,8 +17,8 @@ const boolean = (val = true) => {
   }
 }
 
-const TfTable = {
-  name: 'TfTable',
+const EaTable = {
+  name: 'EaTable',
   components: {
     ElPagination: Pagination,
     ElCheckbox: Checkbox
@@ -126,7 +126,7 @@ const TfTable = {
       if (column.hidden) {
         return true
       }
-      columns.push(createColumn(column, `tf-table-column-${column.prop || index}`))
+      columns.push(createColumn(column, `ea-table-column-${column.prop || index}`))
     })
 
     // append 插槽
@@ -261,7 +261,7 @@ const TfTable = {
       }
       generateLis(_self.columns)
       return (
-        <div class="tf-table-header-context-menu" v-show={_self.showContextMenu} style={_self.contextMenuStyle}>
+        <div class="ea-table-header-context-menu" v-show={_self.showContextMenu} style={_self.contextMenuStyle}>
           <ul>
             {
               lis.map(li => (
@@ -278,7 +278,7 @@ const TfTable = {
     }
 
     return h('div', {
-      'class': _self.flex ? 'tf-table tf-table-flex' : 'tf-table',
+      'class': _self.flex ? 'ea-table ea-table-flex' : 'ea-table',
       on: {
         '!click': () => {
           _self.contextMenuStyle.opacity = 0
@@ -301,7 +301,7 @@ const TfTable = {
         oldCurrentRow: _self.oldCurrentRow
       }) : _self.$slots.default,
       table,
-      _self.pagination ? <div class="tf-pagination">
+      _self.pagination ? <div class="ea-pagination">
         <el-pagination
           ref="elPagination"
           background
@@ -316,7 +316,7 @@ const TfTable = {
         </el-pagination>
       </div> : '',
       <transition name="el-fade-in-linear">
-        <div class="tf-table-loading" v-show={_self.showLoading && _self.loading}>
+        <div class="ea-table-loading" v-show={_self.showLoading && _self.loading}>
           <i class="el-icon-loading"></i>
         </div>
       </transition>
@@ -664,7 +664,7 @@ const TfTable = {
       }
     },
     getConfigItem (key) {
-      return this.config[key] || TfTable.defaults[key]
+      return this.config[key] || EaTable.defaults[key]
     }
   },
   mounted () {
@@ -698,5 +698,5 @@ const TfTable = {
   }
 }
 
-export default TfTable
+export default EaTable
 </script>

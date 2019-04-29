@@ -1,6 +1,6 @@
 import {Checkbox} from 'element-ui'
 
 Checkbox.install = function (Vue) {
-  Vue.component('TfCheckbox', Checkbox)
+  Vue.component('EaCheckbox', Checkbox)
 }
 export default Checkbox

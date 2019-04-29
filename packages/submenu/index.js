@@ -1,6 +1,6 @@
 import {Submenu} from 'element-ui'
 
 Submenu.install = function (Vue) {
-  Vue.component('TfSubmenu', Submenu)
+  Vue.component('EaSubmenu', Submenu)
 }
 export default Submenu

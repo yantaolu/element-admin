@@ -37,9 +37,9 @@ export default {
 
 ```vue
 <template>
-  <tf-routes-tree ref="menu-tree" class="menu-tree" :menu-tree="menuTree" :default-checked-keys="defaultCheckedKeys">
+  <ea-routes-tree ref="menu-tree" class="menu-tree" :menu-tree="menuTree" :default-checked-keys="defaultCheckedKeys">
     <h4>权限菜单</h4>
-  </tf-routes-tree>
+  </ea-routes-tree>
 </template>
 
 <script>
@@ -105,7 +105,7 @@ export default {
 
 ```vue
 <template>
-  <tf-routes-tree :menu-tree="menuTree" :default-checked-keys="defaultCheckedKeys"></tf-routes-tree>
+  <ea-routes-tree :menu-tree="menuTree" :default-checked-keys="defaultCheckedKeys"></ea-routes-tree>
 </template>
 
 <script>

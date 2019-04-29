@@ -1,6 +1,6 @@
 {
   "name": "element-admin",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The Component Library for Vue.js which is based on Element.",
   "author": "YantaoLu <luyantaoforever@163.com>",
   "main": "lib/element-admin.js",

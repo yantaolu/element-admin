@@ -24,7 +24,7 @@ import NavMenuItem from './nav-menu-item'
 import {Menu} from 'element-ui'
 
 export default {
-  name: 'TfNavMenu',
+  name: 'EaNavMenu',
   components: {ElMenu: Menu, NavSubmenu, NavMenuItem},
   props: {
     backgroundColor: {

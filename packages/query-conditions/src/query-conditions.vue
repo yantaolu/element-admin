@@ -1,5 +1,5 @@
 <template>
-  <el-form ref="conditions-form" class="tf-query-conditions" :model="formData" :rules="rules" label-position="right" label-suffix="：" :label-width="`${labelWidth}px`" inline>
+  <el-form ref="conditions-form" class="ea-query-conditions" :model="formData" :rules="rules" label-position="right" label-suffix="：" :label-width="`${labelWidth}px`" inline>
     <el-form-item
       v-for="(con, index) in conditions" :key="`condition-${con.name}-${index}`" :label="con.text" :prop="con.name"
       :class="{'date-range-condition': con.type === 'date' && con.range}" :style="{width: `${getItemWidth(con)}px`}">
@@ -33,17 +33,17 @@
         v-else-if="con.type === 'number'" v-model="formData[con.name]" controls-position="right" @keyup.enter.native.stop="handleQuery"
         v-bind="con.props"></el-input-number>
       <!--地址组件-->
-      <tf-address
+      <ea-address
         v-else-if="con.type === 'address'" v-model="formData[con.name]" :placeholder="getPlaceHolder(con)"
-        v-bind="con.props" clearable></tf-address>
+        v-bind="con.props" clearable></ea-address>
       <!--文本输入-->
       <el-input
         v-else v-model="formData[con.name]" :placeholder="getPlaceHolder(con)"
         @keyup.enter.native.stop="handleQuery" v-bind="con.props"></el-input>
     </el-form-item>
     <el-form-item v-if="conditions.length" style="margin-top: -1px; text-align: center;" :style="{width: `${itemWidth}px`}">
-      <tf-button icon="el-icon-search" @click="handleQuery" type="primary">{{searchText}}</tf-button>
-      <tf-button v-if="showReset" icon="el-icon-setting" @click="reset">{{resetText}}</tf-button>
+      <ea-button icon="el-icon-search" @click="handleQuery" type="primary">{{searchText}}</ea-button>
+      <ea-button v-if="showReset" icon="el-icon-setting" @click="reset">{{resetText}}</ea-button>
     </el-form-item>
   </el-form>
 </template>
@@ -84,7 +84,7 @@ const getRandomFieldName = () => {
 }
 
 export default {
-  name: 'TfQueryConditions',
+  name: 'EaQueryConditions',
   components: {
     ElInput: Input,
     ElInputNumber: InputNumber,

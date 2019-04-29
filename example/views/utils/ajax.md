@@ -130,7 +130,7 @@ ajax.interceptors.response.use(function(response) {
   if (code !== 0) {
     // 未登录
     if (code === -3) {
-      location.href = `//v1test.tf56.com/tfWeb/index.html#/login?redirectUrl=${location.href}`
+    
     }
     return Promise.reject(new ResultError(data.msg, code))
   }

@@ -1,5 +1,5 @@
 <template>
-  <!--<tf-integrated-page :columns="columns" :conditions="conditions" @fetch-data="fetchData" :label-width="80" :auto-fetch="false"></tf-integrated-page>-->
+  <!--<ea-integrated-page :columns="columns" :conditions="conditions" @fetch-data="fetchData" :label-width="80" :auto-fetch="false"></ea-integrated-page>-->
   <div class="markdown-body" v-html="text"></div>
 </template>
 

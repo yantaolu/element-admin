@@ -1,10 +1,10 @@
 # 基本使用
 
-> 组件库目前包含了（弃用的组件以外的）所有 ElementUI 组件，使用方式和 ElementUI 相同，为了后续的扩展以及统一升级，将组件名更新为 tf 前缀
+> 组件库目前包含了（弃用的组件以外的）所有 ElementUI 组件，使用方式和 ElementUI 相同，为了后续的扩展以及统一升级，将组件名更新为 ea 前缀
 
 > 简单来说目前是基于 ElementUI 做了一层封装，支持 ElementUI 原来所有属性，后期可以定制或者替换，使用者无感平行升级
 
-> 这里所有的标签均以 "tf-" 作为前缀，不可使用 "el-"
+> 这里所有的标签均以 "ea-" 作为前缀，不可使用 "el-"
 
 - 全局注册的组件有以下组件，vue组件中可以直接使用，在入口文件中导入后不再需要额外引入
 
@@ -85,10 +85,10 @@ import {
 <template>
   <div>
     <!--使用方法-->
-    <tf-alert></tf-alert>
-    <tf-aside></tf-aside>
-    <tf-autocomplete></tf-autocomplete>
-    <tf-button></tf-button>
+    <ea-alert></ea-alert>
+    <ea-aside></ea-aside>
+    <ea-autocomplete></ea-autocomplete>
+    <ea-button></ea-button>
     <!--其他类似-->
   </div>
 </template>

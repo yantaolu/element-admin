@@ -1,12 +1,12 @@
 <template>
   <el-menu-item :index="index">
     <div :style="style">
-      <tf-icon :name="item.icon"></tf-icon>
+      <ea-icon :name="item.icon"></ea-icon>
       <span>{{item.title}}</span>
     </div>
-    <tf-icon
+    <ea-icon
       v-if="item.multi" class="add-tab-icon" name="plus" :color="textColor" :font-size="12"
-      title="新开标签页" @click.native.stop="handleAddTab(item.code)"></tf-icon>
+      title="新开标签页" @click.native.stop="handleAddTab(item.code)"></ea-icon>
   </el-menu-item>
 </template>
 

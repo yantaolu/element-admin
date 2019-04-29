@@ -1,4 +1,4 @@
-import {routesProcessor} from 'tf'
+import {routesProcessor} from 'ea'
 
 // 使用require.context读取当前目录下以route.js命名的路由模块
 const tabRoutes = (req => {

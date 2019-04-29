@@ -14,7 +14,7 @@ IntegratedPage.loadConfig = (cof) => {
   return {
     render (h) {
       const self = this
-      return h('tf-integrated-page', {
+      return h('ea-integrated-page', {
         class: '',
         props: {
           conditions: self.conditions,

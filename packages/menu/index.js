@@ -1,6 +1,6 @@
 import {Menu} from 'element-ui'
 
 Menu.install = function (Vue) {
-  Vue.component('TfMenu', Menu)
+  Vue.component('EaMenu', Menu)
 }
 export default Menu

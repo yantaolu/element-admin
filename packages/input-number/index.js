@@ -1,6 +1,6 @@
 import {InputNumber} from 'element-ui'
 
 InputNumber.install = function (Vue) {
-  Vue.component('TfInputNumber', InputNumber)
+  Vue.component('EaInputNumber', InputNumber)
 }
 export default InputNumber

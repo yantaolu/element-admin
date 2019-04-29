@@ -1,6 +1,6 @@
 import {Pagination} from 'element-ui'
 
 Pagination.install = function (Vue) {
-  Vue.component('TfPagination', Pagination)
+  Vue.component('EaPagination', Pagination)
 }
 export default Pagination

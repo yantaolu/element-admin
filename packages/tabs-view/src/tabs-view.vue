@@ -42,7 +42,7 @@ const TabHomeName = 'private-tab-home'
 let tabComponents
 
 export default {
-  name: 'TfTabsView',
+  name: 'EaTabsView',
   components: {PrivateTabs, PrivateTabPane},
   props: {
     // 是否控制权限

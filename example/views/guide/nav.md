@@ -1,10 +1,10 @@
 # 导航菜单
 
-> 导航菜单使用了封装组件 <tf-nav-menu></tf-nav-menu> 实现，请参考 index.vue 中使用
+> 导航菜单使用了封装组件 <ea-nav-menu></ea-nav-menu> 实现，请参考 index.vue 中使用
 
 ```vue
 <template>
-  <tf-nav-menu :menus="menus" :collapse="collapse" @handleMenuSelect="handleMenuSelect"></tf-nav-menu>
+  <ea-nav-menu :menus="menus" :collapse="collapse" @handleMenuSelect="handleMenuSelect"></ea-nav-menu>
 </template>
 
 <script>

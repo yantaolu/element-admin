@@ -1,6 +1,6 @@
 import {Option} from 'element-ui'
 
 Option.install = function (Vue) {
-  Vue.component('TfOption', Option)
+  Vue.component('EaOption', Option)
 }
 export default Option

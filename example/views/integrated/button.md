@@ -10,7 +10,7 @@
 
 ```vue
 <template>
-  <tf-button @click="handleClick">按钮</tf-button>
+  <ea-button @click="handleClick">按钮</ea-button>
 </template>
 
 <script>

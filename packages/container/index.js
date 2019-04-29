@@ -1,6 +1,6 @@
 import {Container} from 'element-ui'
 
 Container.install = function (Vue) {
-  Vue.component('TfContainer', Container)
+  Vue.component('EaContainer', Container)
 }
 export default Container

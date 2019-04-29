@@ -7,9 +7,9 @@
 ```vue
 <template>
   <div>
-    <tf-button @click="queryData">查询列表</tf-button>
+    <ea-button @click="queryData">查询列表</ea-button>
     <!--data属性支持数组和方法，如果是数组则列表以该数组为数据源显示，如果是方法则是table内部接口调用可以动态获取数据-->
-    <tf-table ref="privete-table" :columns="columns" :data="fetchData"></tf-table>
+    <ea-table ref="privete-table" :columns="columns" :data="fetchData"></ea-table>
   </div>
 </template>
 
@@ -129,7 +129,7 @@ export default {
 |sortMethod|	对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个数字，和 Array.sort 表现一致|Function(a, b)|-|-|
 |sortBy|指定数据按照哪个属性进行排序，仅当 sortable 设置为 true 且没有设置 sort-method 的时候有效。如果 sort-by 为数组，则先按照第 1 个属性排序，如果第 1 个相等，再按照第 2 个排序，以此类推|String/Array/Function(row, index)|-|-|
 |sortOrders|数据在排序时所使用排序策略的轮转顺序，仅当 sortable 为 true 时有效。需传入一个数组，随着用户点击表头，该列依次按照数组中元素的顺序进行排序|Array|数组中的元素需为以下三者之一：ascending 表示升序，descending 表示降序，null 表示还原为原始顺序|['ascending', 'descending', null]|
-|resizable|对应列是否可以通过拖动改变宽度（需要在 tf-table 上设置 border 属性为真）|Boolean|true/false|true|
+|resizable|对应列是否可以通过拖动改变宽度（需要在 ea-table 上设置 border 属性为真）|Boolean|true/false|true|
 |formatter|用来格式化内容|Function(row, column, cellValue, index)|-|-|
 |dateFormat|格式化时间戳|Boolean/String|true/yyyy-MM-dd HH:mm:ss|yyyy-MM-dd HH:mm|
 |showOverflowTooltip|当内容过长被隐藏时显示 tooltip|Boolean|true/false|false|

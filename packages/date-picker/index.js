@@ -6,6 +6,6 @@ DatePicker.props.unlinkPanels = {
 }
 
 DatePicker.install = function (Vue) {
-  Vue.component('TfDatePicker', DatePicker)
+  Vue.component('EaDatePicker', DatePicker)
 }
 export default DatePicker

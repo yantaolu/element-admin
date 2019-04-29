@@ -1,34 +1,34 @@
 <template>
-  <div class="tf-integrated-page">
-    <tf-query-condition v-if="conditions && conditions.length"
+  <div class="ea-integrated-page">
+    <ea-query-condition v-if="conditions && conditions.length"
                         :conditions="conditions" :label-width="labelWidth" @query="handleQuery" :cols="conditionSize"
-                        :auto-query="autoFetch"></tf-query-condition>
-    <tf-table ref="private-table" :columns="privateColumns" :data="loadData" :loading="loading" :auto-load="false" :context="tableContext" flex>
+                        :auto-query="autoFetch"></ea-query-condition>
+    <ea-table ref="private-table" :columns="privateColumns" :data="loadData" :loading="loading" :auto-load="false" :context="tableContext" flex>
       <div class="table-tool-bar" slot-scope="selection">
         <template v-for="bar in toolbars">
-          <tf-button v-if="bar === 'add'" :key="bar"
+          <ea-button v-if="bar === 'add'" :key="bar"
                      type="primary" icon="el-icon-plus"
                      @click="addItem" :title="addTitle">{{extendButtons.add.text}}
-          </tf-button>
-          <tf-button v-if="bar === 'edit'" :key="bar"
+          </ea-button>
+          <ea-button v-if="bar === 'edit'" :key="bar"
                      type="primary" icon="el-icon-edit" :disabled="!selection.currentRow"
                      @click="editItem(selection)" :title="editTitle">{{extendButtons.edit.text}}
-          </tf-button>
-          <tf-button v-if="bar === 'delete'" :key="bar"
+          </ea-button>
+          <ea-button v-if="bar === 'delete'" :key="bar"
                      type="primary" icon="el-icon-delete" :disabled="deleteDisabled(selection)"
                      @click="deleteItems(selection)" :title="deleteTitle">{{extendButtons.delete.text}}
-          </tf-button>
-          <tf-button v-if="bar === 'view'" :key="bar"
+          </ea-button>
+          <ea-button v-if="bar === 'view'" :key="bar"
                      type="primary" icon="el-icon-view" :disabled="!selection.currentRow"
                      @click="viewItem(selection)" :title="viewTitle">{{extendButtons.view.text}}
-          </tf-button>
-          <tf-button v-if="bar === 'refresh'" :key="bar"
+          </ea-button>
+          <ea-button v-if="bar === 'refresh'" :key="bar"
                      type="primary" icon="el-icon-refresh"
                      @click="refresh" :title="refreshTitle">{{extendButtons.refresh.text}}
-          </tf-button>
+          </ea-button>
         </template>
       </div>
-    </tf-table>
+    </ea-table>
     <el-dialog class="form-dialog" :title="dialogTitle" :visible.sync="dialogFormVisible" :before-close="cancel">
       <el-form ref="private-form" :model="form" :rules="rules" :validate-on-rule-change="false" :disabled="mode === 'view'" label-width="100px">
         <el-form-item v-for="(item, index) in formItems" :key="item.name + index" :label="item.text" :prop="item.name">
@@ -58,11 +58,11 @@
       </el-form>
       <div slot="footer" class="dialog-footer">
         <template v-if="mode !== 'view'">
-          <tf-button type="primary" @click="submit">确 定</tf-button>
-          <tf-button @click="cancel">取 消</tf-button>
+          <ea-button type="primary" @click="submit">确 定</ea-button>
+          <ea-button @click="cancel">取 消</ea-button>
         </template>
         <template v-else>
-          <tf-button @click="cancel">确 定</tf-button>
+          <ea-button @click="cancel">确 定</ea-button>
         </template>
       </div>
     </el-dialog>
@@ -70,9 +70,9 @@
 </template>
 
 <script>
-import TfTable from '../../table/index'
-import TfQueryCondition from '../../query-conditions/index'
-import TfButton from '../../button/index'
+import EaTable from '../../table/index'
+import EaQueryCondition from '../../query-conditions/index'
+import EaButton from '../../button/index'
 import PrivateCheckboxGroup from './private-checkbox-group'
 import _$ from '../../../src/utils/common'
 import {Input, Select, Option, RadioGroup, Radio, CheckboxGroup, Checkbox, DatePicker, TimePicker, Dialog, Form, FormItem} from 'element-ui'
@@ -102,11 +102,11 @@ const defaultButtons = {
 }
 
 export default {
-  name: 'TfIntegratedPage',
+  name: 'EaIntegratedPage',
   components: {
-    TfTable,
-    TfQueryCondition,
-    TfButton,
+    EaTable,
+    EaQueryCondition,
+    EaButton,
     PrivateCheckboxGroup,
     ElInput: Input,
     ElSelect: Select,

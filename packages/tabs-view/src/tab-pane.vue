@@ -1,6 +1,6 @@
 <template>
-  <transition name="tf-slide-fade">
-    <div class="tf-tab-pane" v-show="show">
+  <transition name="ea-slide-fade">
+    <div class="ea-tab-pane" v-show="show">
       <slot></slot>
     </div>
   </transition>

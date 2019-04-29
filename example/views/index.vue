@@ -1,7 +1,7 @@
 <template>
-  <tf-container class="page-container is-vertical">
+  <ea-container class="page-container is-vertical">
     <!--页面头部-->
-    <tf-header height="50px" style="padding: 0">
+    <ea-header height="50px" style="padding: 0">
       <!---->
       <custom-header @logout="handleLogout" @toggleSlider="toggleSlider">
         <!--logo定制-->
@@ -11,27 +11,27 @@
           </span>
         </slot>
       </custom-header>
-    </tf-header>
+    </ea-header>
     <!--下部主体部分-->
-    <tf-container>
+    <ea-container>
       <!--侧边栏，可缩放-->
-      <tf-aside :width="sliderWidth + 'px'" class="page-aside">
+      <ea-aside :width="sliderWidth + 'px'" class="page-aside">
         <div class="nav-menu-container">
           <!--导航菜单，已经实现递归可以支持无限层-->
-          <tf-nav-menu :menus="menus" :collapse="collapse" @handleMenuSelect="handleMenuSelect"></tf-nav-menu>
+          <ea-nav-menu :menus="menus" :collapse="collapse" @handleMenuSelect="handleMenuSelect"></ea-nav-menu>
         </div>
-      </tf-aside>
+      </ea-aside>
       <!--右侧页面容器-->
-      <tf-main class="page-content" style="padding: 5px;">
+      <ea-main class="page-content" style="padding: 5px;">
         <!--<tabs-view :authorities="authorities" :components="components" authority>-->
         <tabs-view :components="components">
           <div slot="403">403</div>
           <div slot="404">404</div>
           <div slot="500">500</div>
         </tabs-view>
-      </tf-main>
-    </tf-container>
-  </tf-container>
+      </ea-main>
+    </ea-container>
+  </ea-container>
 </template>
 
 <script>

@@ -28,7 +28,7 @@ if (isOnline) {
 }
 
 export default {
-  name: 'TfAddr',
+  name: 'EaAddr',
   components: {'el-cascader': Cascader},
 
   model: {

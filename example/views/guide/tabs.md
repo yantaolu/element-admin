@@ -122,7 +122,7 @@ export default {
 
 ```vue
 <template>
-  <tf-table ref="table" :columns="[]" data="[]"></tf-table>
+  <ea-table ref="table" :columns="[]" data="[]"></ea-table>
 </template>
 
 <script>

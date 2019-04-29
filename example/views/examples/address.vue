@@ -1,11 +1,11 @@
 <template>
   <div>
-    固定级别：<tf-address v-model="address" ref="address" placeholder="请选择省市区" :clearable="true" :params="params" @change="handleChange"></tf-address>
+    固定级别：<ea-address v-model="address" ref="address" placeholder="请选择省市区" :clearable="true" :params="params" @change="handleChange"></ea-address>
     <div style="margin-top: 10px;">绑定值： {{JSON.stringify(address)}}</div>
     <div style="margin-top: 10px;">输出结果（地址）： {{JSON.stringify($refs.address && $refs.address.getDetail(true))}}</div>
     <div style="margin-top: 10px;">输出结果（完整）： {{JSON.stringify($refs.address && $refs.address.getDetail())}}</div>
     <div style="padding: 10px 0"></div>
-    任意级别：<tf-address v-model="address1" ref="address1" placeholder="请选择省市区" :clearable="true" :params="params" :change-on-select="true" @change="handleChange"></tf-address>
+    任意级别：<ea-address v-model="address1" ref="address1" placeholder="请选择省市区" :clearable="true" :params="params" :change-on-select="true" @change="handleChange"></ea-address>
     <div style="margin-top: 10px;">绑定值： {{JSON.stringify(address1)}}</div>
     <div style="margin-top: 10px;">输出结果（地址）： {{JSON.stringify($refs.address1 && $refs.address1.getDetail(true))}}</div>
     <div style="margin-top: 10px;">输出结果（完整）： {{JSON.stringify($refs.address1 && $refs.address1.getDetail())}}</div>

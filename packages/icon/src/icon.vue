@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'TfIcon',
+  name: 'EaIcon',
   props: {
     name: String,
     fontSize: Number,
@@ -13,9 +13,9 @@ export default {
   computed: {
     className () {
       if (/^fa-/.test(this.name)) {
-        return 'tf-icon fa ' + this.name
+        return 'ea-icon fa ' + this.name
       }
-      return 'tf-icon el-icon-' + this.name
+      return 'ea-icon el-icon-' + this.name
     },
     style () {
       return {

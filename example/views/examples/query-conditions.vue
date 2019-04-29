@@ -1,6 +1,6 @@
 <template>
   <div>
-    <tf-query-conditions :conditions="conditions" @query="handleQuery" @reset="handleReset"></tf-query-conditions>
+    <ea-query-conditions :conditions="conditions" @query="handleQuery" @reset="handleReset"></ea-query-conditions>
     <div style="color: #555">
       <div style="font-size: 16px; margin: 10px 0; color: #333;">查询条件展示（值 类型）</div>
       <ul style="list-style: none; margin-left: 20px;">

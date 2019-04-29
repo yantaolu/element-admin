@@ -1,7 +1,7 @@
 <template>
   <el-submenu :index="index">
     <div class="slot-title" :style="style" slot="title" @click="handleClick">
-      <tf-icon :name="item.icon"></tf-icon>
+      <ea-icon :name="item.icon"></ea-icon>
       <span>{{item.title}}</span>
     </div>
     <template v-for="child in item.children">
@@ -22,11 +22,11 @@
 <script>
 import NavMenuItem from './nav-menu-item'
 import {Submenu} from 'element-ui'
-import TfIcon from '../../icon/src/icon'
+import EaIcon from '../../icon/src/icon'
 
 export default {
   name: 'nav-submenu',
-  components: {ElSubmenu: Submenu, NavMenuItem, TfIcon},
+  components: {ElSubmenu: Submenu, NavMenuItem, EaIcon},
   props: {
     index: String,
     item: Object,

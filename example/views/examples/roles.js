@@ -1,4 +1,4 @@
-import {ValidateRules, IntegratedPage} from 'tf'
+import {ValidateRules, IntegratedPage} from 'ea'
 
 const roles = [{
   roleId: 'admin',

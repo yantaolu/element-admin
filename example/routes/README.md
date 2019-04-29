@@ -9,7 +9,7 @@
 >>
 >>order：一级菜单顺序，数值越小越靠前
 >>
->>buttons：预留按钮权限控制，数组，元素key为按钮组件<tf-button :authorityCode='create'>创建订单</tfbutton> authorityCode 属性，值为按钮名称
+>>buttons：预留按钮权限控制，数组，元素key为按钮组件<ea-button :authorityCode='create'>创建订单</ea-button> authorityCode 属性，值为按钮名称
 >>
 >>其他属性均为Vue路由默认属性，注意路由path中不支持使用路径参数params，因为在路由入口中对模块路由进行了处理，所以在使用参数时需使用query方式
 >>

@@ -1,9 +1,9 @@
 <template>
-  <tf-routes-tree
+  <ea-routes-tree
     ref="menu-tree" class="menu-tree" :menu-tree="menuTree" :default-expand-all="defaultExpandAll"
     :default-expanded-keys="defaultExpandedKeys" :default-checked-keys="defaultCheckedKeys">
     <h4>权限菜单</h4>
-  </tf-routes-tree>
+  </ea-routes-tree>
 </template>
 
 <script>

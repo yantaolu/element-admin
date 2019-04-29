@@ -1,6 +1,6 @@
 import {OptionGroup} from 'element-ui'
 
 OptionGroup.install = function (Vue) {
-  Vue.component('TfOptionGroup', OptionGroup)
+  Vue.component('EaOptionGroup', OptionGroup)
 }
 export default OptionGroup

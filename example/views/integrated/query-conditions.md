@@ -6,7 +6,7 @@
 
 ```vue
 <template>
-  <tf-query-conditions :conditions="conditions" @query="handleQuery" @reset="handleReset"></tf-query-conditions>
+  <ea-query-conditions :conditions="conditions" @query="handleQuery" @reset="handleReset"></ea-query-conditions>
 </template>
 
 <script>

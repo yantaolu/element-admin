@@ -27,7 +27,7 @@ const boolean = (value = false) => {
   }
 }
 export default {
-  name: 'TfButton',
+  name: 'EaButton',
   components: {ElButton: Button},
   props: {
     size: String,

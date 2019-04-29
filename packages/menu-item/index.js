@@ -1,6 +1,6 @@
 import {MenuItem} from 'element-ui'
 
 MenuItem.install = function (Vue) {
-  Vue.component('TfMenuItem', MenuItem)
+  Vue.component('EaMenuItem', MenuItem)
 }
 export default MenuItem

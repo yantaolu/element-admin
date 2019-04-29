@@ -1,6 +1,6 @@
 import {Tabs} from 'element-ui'
 
 Tabs.install = function (Vue) {
-  Vue.component('TfTabs', Tabs)
+  Vue.component('EaTabs', Tabs)
 }
 export default Tabs

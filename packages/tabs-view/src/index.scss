@@ -1,4 +1,4 @@
-.tf-tabs-view {
+.ea-tabs-view {
   flex: auto;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,7 @@
     box-sizing: border-box;
   }
 
-  .tf-tabs-bars {
+  .ea-tabs-bars {
     user-select: none;
     border-bottom: 1px solid #dddee1;
     overflow: hidden;
@@ -19,7 +19,7 @@
       padding: 0 30px;
     }
 
-    .tf-tabs-nav-prev, .tf-tabs-nav-next {
+    .ea-tabs-nav-prev, .ea-tabs-nav-next {
       position: absolute;
       width: 30px;
       line-height: 32px;
@@ -34,15 +34,15 @@
       }
     }
 
-    .tf-tabs-nav-prev {
+    .ea-tabs-nav-prev {
       left: 0;
     }
 
-    .tf-tabs-nav-next {
+    .ea-tabs-nav-next {
       right: 0;
     }
 
-    .tf-tabs-bars-container {
+    .ea-tabs-bars-container {
       list-style: none;
       overflow: hidden;
       white-space: nowrap;
@@ -54,7 +54,7 @@
     }
   }
 
-  .tf-tabs-contents {
+  .ea-tabs-contents {
     flex: auto;
     position: relative;
     border: 1px solid #dddee1;
@@ -81,7 +81,7 @@
         height: 28px;
         line-height: 28px;
         padding: 0 10px;
-        .tf-icon {
+        .ea-icon {
           margin-right: 3px;
         }
         &:not(.disabled):hover {
@@ -93,7 +93,7 @@
   }
 }
 
-.tf-tab-bar {
+.ea-tab-bar {
   display: inline-block;
   width: auto;
   margin: 0 4px 0 0;
@@ -130,7 +130,7 @@
     font-size: 14px;
   }
 
-  & > .tf-icon {
+  & > .ea-icon {
     color: inherit;
     vertical-align: middle;
   }
@@ -155,7 +155,7 @@
   }
 }
 
-.tf-tab-pane {
+.ea-tab-pane {
   position: absolute;
   padding: 10px;
   height: 100%;
@@ -163,40 +163,40 @@
   overflow-y: auto;
 }
 
-.tf-slide-fade-enter-active {
+.ea-slide-fade-enter-active {
   transition: all .4s ease;
 }
 
-.tf-slide-fade-leave-active {
+.ea-slide-fade-leave-active {
   transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 
-.tf-slide-fade-enter {
+.ea-slide-fade-enter {
   transform: translateX(10px);
   opacity: 0;
 }
 
-.tf-slide-fade-leave-to {
+.ea-slide-fade-leave-to {
   opacity: 0;
 }
 
-.tf-tabs-slide-fade-enter-active {
+.ea-tabs-slide-fade-enter-active {
   transition: all .4s ease;
 }
 
-.tf-tabs-slide-fade-leave-active {
+.ea-tabs-slide-fade-leave-active {
   transition: all .2s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
 
-.tf-tabs-slide-fade-enter {
+.ea-tabs-slide-fade-enter {
   opacity: 0;
 }
 
-.tf-tabs-slide-fade-leave-to {
+.ea-tabs-slide-fade-leave-to {
   opacity: 0;
 }
 
-.tf-tab-loading {
+.ea-tab-loading {
   height: 100%;
   font-size: 36px;
   color: #cccccc;

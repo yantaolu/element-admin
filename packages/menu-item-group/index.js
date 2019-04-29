@@ -1,6 +1,6 @@
 import {MenuItemGroup} from 'element-ui'
 
 MenuItemGroup.install = function (Vue) {
-  Vue.component('TfMenuItemGroup', MenuItemGroup)
+  Vue.component('EaMenuItemGroup', MenuItemGroup)
 }
 export default MenuItemGroup

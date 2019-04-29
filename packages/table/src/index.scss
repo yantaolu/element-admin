@@ -1,6 +1,6 @@
-.tf-table {
+.ea-table {
   position: relative;
-  .tf-table-header-context-menu {
+  .ea-table-header-context-menu {
     background: #ffffff;
     position: absolute;
     z-index: 100;
@@ -23,7 +23,7 @@
     }
   }
 
-  .tf-pagination {
+  .ea-pagination {
     text-align: right;
     margin: 10px 0;
     overflow: hidden;
@@ -33,7 +33,7 @@
     }
   }
 
-  .tf-table-loading {
+  .ea-table-loading {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -46,7 +46,7 @@
   }
 }
 
-.tf-table-flex {
+.ea-table-flex {
   display: flex;
   flex-direction: column;
   flex: auto;

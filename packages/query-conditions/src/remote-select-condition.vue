@@ -1,11 +1,11 @@
 <template>
-  <tf-select
+  <ea-select
     :value="value" :placeholder="placeholder" v-bind="condition.props"
     filterable remote reserve-keyword
     :remote-method="remoteMethod" :loading="loading"
     @clear="handleClear" v-on="$listeners" clearable>
     <el-option v-for="(op, i) in options" :key="`${getOpValue(op)}-${i}`" :label="getOpLabel(op)" :value="getOpValue(op)"></el-option>
-  </tf-select>
+  </ea-select>
 </template>
 
 <script>

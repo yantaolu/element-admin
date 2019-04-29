@@ -1,7 +1,7 @@
 <template>
-  <div class="tf-routes-tree">
+  <div class="ea-routes-tree">
     <slot></slot>
-    <tf-tree ref="routes-tree"
+    <ea-tree ref="routes-tree"
              @check="handleCheck"
              @check-change="handleCheckChange"
              :data="[menuTree]"
@@ -16,13 +16,13 @@
         <span>{{node.label}}</span>
         <ul v-if="data.buttons" class="button-items">
           <li v-for="code in Object.keys(data.buttons)" :key="code">
-            <tf-checkbox class="authority-button" v-model="data.buttons[code].checked">
+            <ea-checkbox class="authority-button" v-model="data.buttons[code].checked">
               <span style="color: #999999">【按钮】</span>{{data.buttons[code].label}}
-            </tf-checkbox>
+            </ea-checkbox>
           </li>
         </ul>
       </div>
-    </tf-tree>
+    </ea-tree>
   </div>
 </template>
 
@@ -30,7 +30,7 @@
 import {Tree} from 'element-ui'
 
 export default {
-  name: 'TfRoutesTree',
+  name: 'EaRoutesTree',
   components: {Tree},
   props: {
     menuTree: {

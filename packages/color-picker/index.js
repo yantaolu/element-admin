@@ -1,6 +1,6 @@
 import {ColorPicker} from 'element-ui'
 
 ColorPicker.install = function (Vue) {
-  Vue.component('TfColorPicker', ColorPicker)
+  Vue.component('EaColorPicker', ColorPicker)
 }
 export default ColorPicker

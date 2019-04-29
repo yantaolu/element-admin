@@ -7,7 +7,7 @@
 ```vue
 <template>
   <div>
-    <tf-address v-model="address" ref="address" placeholder="请选择省市区" :clearable="true" :params="params" @change="handleChange"></tf-address>
+    <ea-address v-model="address" ref="address" placeholder="请选择省市区" :clearable="true" :params="params" @change="handleChange"></ea-address>
     <div style="margin-top: 10px;">绑定值： {{JSON.stringify(address)}}</div>
     <div style="margin-top: 10px;">输出结果（地址）： {{JSON.stringify($refs.address && $refs.address.getDetail(true))}}</div>
     <div style="margin-top: 10px;">输出结果（完整）： {{JSON.stringify($refs.address && $refs.address.getDetail())}}</div>

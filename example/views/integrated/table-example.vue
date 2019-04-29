@@ -1,5 +1,5 @@
 <template>
-  <tf-table :columns="columns" :data="[{}]" :pagination="false"></tf-table>
+  <ea-table :columns="columns" :data="[{}]" :pagination="false"></ea-table>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ export default {
           const self = this
           return (
             <span>
-              <tf-button type="text" onClick={self.plus} icon="el-icon-plus">增加区间</tf-button>
+              <ea-button type="text" onClick={self.plus} icon="el-icon-plus">增加区间</ea-button>
             </span>
           )
         }
@@ -38,7 +38,7 @@ export default {
         minWidth: '120px',
         prop: 'prop-' + len + '',
         renderCell (h) {
-          return h('tf-input-number', {
+          return h('ea-input-number', {
             props: {
               controlsPosition: 'right',
               min: 0,

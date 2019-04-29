@@ -1,6 +1,6 @@
 import {ButtonGroup} from 'element-ui'
 
 ButtonGroup.install = function (Vue) {
-  Vue.component('TfButtonGroup', ButtonGroup)
+  Vue.component('EaButtonGroup', ButtonGroup)
 }
 export default ButtonGroup

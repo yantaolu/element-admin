@@ -74,12 +74,12 @@ import 'custom-theme.scss'
 Vue.use(ElementAdmin)
 ```
 
-- <a href="//fontawesome.com/icons?d=gallery&m=free" target="_blank">font-awesome</a> 字体图标库支持，需要在 tf-icon 组件中使用 font-awesome 图标库时，请在入口文件中引入字体图标库样式表
+- <a href="//fontawesome.com/icons?d=gallery&m=free" target="_blank">font-awesome</a> 字体图标库支持，需要在 ea-icon 组件中使用 font-awesome 图标库时，请在入口文件中引入字体图标库样式表
 
 ```javascript
 import 'element-admin/lib/css/font-awesome.min.css'
 ```
 
 ```vue
-<tf-icon name='fa-glass'></tf-icon>
+<ea-icon name='fa-glass'></ea-icon>
 ```

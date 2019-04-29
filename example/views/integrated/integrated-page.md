@@ -10,7 +10,7 @@
 
 ```vue
 <template>
-  <tf-integrated-page :columns="columns" :buttons="buttons" :conditions="conditions" :fields="fields" :condition-size="3" :label-width="100" @fetch-data="fetchData"></tf-integrated-page>
+  <ea-integrated-page :columns="columns" :buttons="buttons" :conditions="conditions" :fields="fields" :condition-size="3" :label-width="100" @fetch-data="fetchData"></ea-integrated-page>
 </template>
 
 <script>

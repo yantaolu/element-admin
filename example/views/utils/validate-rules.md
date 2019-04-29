@@ -1,52 +1,52 @@
 ## Form表单验证（ValidateRules）
 
-> tf-form 组件附加工具类，提供常用的表单校验功能
+> ea-form 组件附加工具类，提供常用的表单校验功能
 
 > <a href="http://element-cn.eleme.io/#/zh-CN/component/form#biao-dan-yan-zheng" target="_blank">表单验证示例</a>
 
 ```vue
 <template>
-  <tf-form v-model="form" :rules="rules">
-    <tf-form-item label="必填" prop="required">
-      <tf-input v-model="form.required"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="字符串长度" prop="length">
-      <tf-input v-model="form.length"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="范围" prop="range">
-      <tf-input v-model="form.range"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="时间范围" prop="dateRange">
-      <tf-input v-model="form.dateRange"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="手机号码" prop="mobile">
-      <tf-input v-model="form.mobile"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="身份证" prop="peopleID">
-      <tf-input v-model="form.peopleID"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="车牌号" prop="carID">
-      <tf-input v-model="form.carID"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="邮箱地址" prop="email">
-      <tf-input v-model="form.email"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="url地址" prop="url">
-      <tf-input v-model="form.url"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="枚举值" prop="enum">
-      <tf-input v-model="form.enum"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="数字" prop="number">
-      <tf-input v-model="form.number"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="整数" prop="integer">
-      <tf-input v-model="form.integer"></tf-input>
-    </tf-form-item>
-    <tf-form-item label="小数" prop="float">
-      <tf-input v-model="form.float"></tf-input>
-    </tf-form-item>
-  </tf-form>
+  <ea-form v-model="form" :rules="rules">
+    <ea-form-item label="必填" prop="required">
+      <ea-input v-model="form.required"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="字符串长度" prop="length">
+      <ea-input v-model="form.length"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="范围" prop="range">
+      <ea-input v-model="form.range"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="时间范围" prop="dateRange">
+      <ea-input v-model="form.dateRange"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="手机号码" prop="mobile">
+      <ea-input v-model="form.mobile"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="身份证" prop="peopleID">
+      <ea-input v-model="form.peopleID"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="车牌号" prop="carID">
+      <ea-input v-model="form.carID"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="邮箱地址" prop="email">
+      <ea-input v-model="form.email"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="url地址" prop="url">
+      <ea-input v-model="form.url"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="枚举值" prop="enum">
+      <ea-input v-model="form.enum"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="数字" prop="number">
+      <ea-input v-model="form.number"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="整数" prop="integer">
+      <ea-input v-model="form.integer"></ea-input>
+    </ea-form-item>
+    <ea-form-item label="小数" prop="float">
+      <ea-input v-model="form.float"></ea-input>
+    </ea-form-item>
+  </ea-form>
 </template>
 
 <script>

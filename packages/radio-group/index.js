@@ -1,6 +1,6 @@
 import {RadioGroup} from 'element-ui'
 
 RadioGroup.install = function (Vue) {
-  Vue.component('TfRadioGroup', RadioGroup)
+  Vue.component('EaRadioGroup', RadioGroup)
 }
 export default RadioGroup

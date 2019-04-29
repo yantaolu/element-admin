@@ -1,40 +1,40 @@
 <template>
-  <div class="tf-tabs-view">
-    <div class="tf-tabs-bars" ref="tabs-bar" :class="{'scroll': nav_scroll}">
-      <div v-show="nav_scroll" class="tf-tabs-nav-prev" @click="scrollToLeft">
+  <div class="ea-tabs-view">
+    <div class="ea-tabs-bars" ref="tabs-bar" :class="{'scroll': nav_scroll}">
+      <div v-show="nav_scroll" class="ea-tabs-nav-prev" @click="scrollToLeft">
         <i class="el-icon-arrow-left"></i>
       </div>
       <!--标签页标题栏-->
-      <ul class="tf-tabs-bars-container" ref="tabs-bar-container" :style="{transform: `translateX(-${nav_transformX}px)`}">
+      <ul class="ea-tabs-bars-container" ref="tabs-bar-container" :style="{transform: `translateX(-${nav_transformX}px)`}">
         <!--标签页标题-->
-        <li v-for="tab in tabs" class="tf-tab-bar" :class="{'bar-active': tab.name === value}" :key="tab.name"
+        <li v-for="tab in tabs" class="ea-tab-bar" :class="{'bar-active': tab.name === value}" :key="tab.name"
             @click.stop="handleClick(tab)" @contextmenu.prevent="contextMenu(tab, $event)">
-          <tf-icon v-if="tab.icon" :name='tab.icon'></tf-icon>
+          <ea-icon v-if="tab.icon" :name='tab.icon'></ea-icon>
           <label>{{tab.title}}</label>
           <i v-if="tab.closable" class="el-icon-close" @click.stop="handleClose(tab)"></i>
         </li>
       </ul>
-      <div v-show="nav_scroll" class="tf-tabs-nav-next" @click="scrollToRight">
+      <div v-show="nav_scroll" class="ea-tabs-nav-next" @click="scrollToRight">
         <i class="el-icon-arrow-right"></i>
       </div>
     </div>
-    <div class="tf-tabs-contents">
+    <div class="ea-tabs-contents">
       <slot></slot>
     </div>
-    <transition name="tf-tabs-slide-fade">
+    <transition name="ea-tabs-slide-fade">
       <div class="tabs-context-menu" v-show="showContextMenu" @mouseleave="showContextMenu = false" @click="showContextMenu = false"
            :style="{left: style_left, top: style_top}">
         <ul>
           <li @click.stop="refresh(currentTab)" :class="{disabled: !currentTab.component}">
-            <tf-icon name="refresh"></tf-icon>
+            <ea-icon name="refresh"></ea-icon>
             <span>刷新</span>
           </li>
           <li @click="closeOthers(currentTab)">
-            <tf-icon name="close"></tf-icon>
+            <ea-icon name="close"></ea-icon>
             <span>关闭其他</span>
           </li>
           <li @click="closeAll">
-            <tf-icon name="delete"></tf-icon>
+            <ea-icon name="delete"></ea-icon>
             <span>关闭所有</span>
           </li>
         </ul>
@@ -46,12 +46,12 @@
 <script>
 import mouseWheelBind from '../../../src/utils/mouse-wheel'
 import _ from 'lodash'
-import TfIcon from '../../icon/src/icon'
+import EaIcon from '../../icon/src/icon'
 import {addResizeListener, removeResizeListener} from 'element-ui/lib/utils/resize-event'
 
 export default {
   name: 'private-tabs',
-  components: {TfIcon},
+  components: {EaIcon},
   props: {
     home: String, // 首页tabName
     value: String // 当前页tabName

@@ -1,6 +1,6 @@
 import Table from './src/table'
 
 Table.install = function (Vue) {
-  Vue.component('TfTable', Table)
+  Vue.component('EaTable', Table)
 }
 export default Table

@@ -1,6 +1,6 @@
 import {Form} from 'element-ui'
 
 Form.install = function (Vue) {
-  Vue.component('TfForm', Form)
+  Vue.component('EaForm', Form)
 }
 export default Form

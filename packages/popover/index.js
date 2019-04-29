@@ -7,6 +7,6 @@ Object.assign(Popover.methods, {
 })
 
 Popover.install = function (Vue) {
-  Vue.component('TfPopover', Popover)
+  Vue.component('EaPopover', Popover)
 }
 export default Popover

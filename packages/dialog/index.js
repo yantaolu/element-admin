@@ -1,6 +1,6 @@
 import {Dialog} from 'element-ui'
 
 Dialog.install = function (Vue) {
-  Vue.component('TfDialog', Dialog)
+  Vue.component('EaDialog', Dialog)
 }
 export default Dialog

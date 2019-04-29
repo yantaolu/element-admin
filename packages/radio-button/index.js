@@ -1,6 +1,6 @@
 import {RadioButton} from 'element-ui'
 
 RadioButton.install = function (Vue) {
-  Vue.component('TfRadioButton', RadioButton)
+  Vue.component('EaRadioButton', RadioButton)
 }
 export default RadioButton

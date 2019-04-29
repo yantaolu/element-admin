@@ -30,7 +30,7 @@ let provinces
 let addressCache = {}
 
 export default {
-  name: 'tf-address',
+  name: 'ea-address',
   components: {
     PrivateCascader: Cascader
   },

@@ -1,6 +1,6 @@
 import {Tag} from 'element-ui'
 
 Tag.install = function (Vue) {
-  Vue.component('TfTag', Tag)
+  Vue.component('EaTag', Tag)
 }
 export default Tag

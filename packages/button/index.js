@@ -1,6 +1,6 @@
 import Button from './src/button'
 
 Button.install = function (Vue) {
-  Vue.component('TfButton', Button)
+  Vue.component('EaButton', Button)
 }
 export default Button

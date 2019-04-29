@@ -1,6 +1,6 @@
 import {CollapseTransition} from 'element-ui'
 
 CollapseTransition.install = function (Vue) {
-  Vue.component('TfCollapseTransition', CollapseTransition)
+  Vue.component('EaCollapseTransition', CollapseTransition)
 }
 export default CollapseTransition

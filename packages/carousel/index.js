@@ -1,6 +1,6 @@
 import {Carousel} from 'element-ui'
 
 Carousel.install = function (Vue) {
-  Vue.component('TfCarousel', Carousel)
+  Vue.component('EaCarousel', Carousel)
 }
 export default Carousel

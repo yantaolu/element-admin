@@ -1,6 +1,6 @@
 import {DropdownItem} from 'element-ui'
 
 DropdownItem.install = function (Vue) {
-  Vue.component('TfDropdownItem', DropdownItem)
+  Vue.component('EaDropdownItem', DropdownItem)
 }
 export default DropdownItem

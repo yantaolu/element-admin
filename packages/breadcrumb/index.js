@@ -1,6 +1,6 @@
 import {Breadcrumb} from 'element-ui'
 
 Breadcrumb.install = function (Vue) {
-  Vue.component('TfBreadcrumb', Breadcrumb)
+  Vue.component('EaBreadcrumb', Breadcrumb)
 }
 export default Breadcrumb
