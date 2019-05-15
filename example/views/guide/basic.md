@@ -10,7 +10,6 @@
 
 ```javascript
 import {
-  Address,
   Alert,
   Aside,
   Autocomplete,

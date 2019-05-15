@@ -27,16 +27,6 @@ export default {
       path: '/integrated-page',
       title: 'IntegratedPage',
       component: resolve => import('../views/integrated/integrated-page.md').then(md => md2vue(md, resolve))
-    },
-    {
-      path: '/address',
-      title: 'Address',
-      component: resolve => import('../views/integrated/address.md').then(md => md2vue(md, resolve))
-    }, {
-      path: '/addr-example',
-      title: 'AddrExample',
-      menu: false,
-      component: resolve => import('../views/examples/address')
     }
   ]
 }

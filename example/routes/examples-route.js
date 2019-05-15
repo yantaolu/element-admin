@@ -24,9 +24,5 @@ export default {
     path: '/query-conditions',
     title: '查询条件',
     component: resolve => import('../views/examples/query-conditions')
-  }, {
-    path: '/address',
-    title: '地址组件',
-    component: resolve => import('../views/examples/address')
   }]
 }

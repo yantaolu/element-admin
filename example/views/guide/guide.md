@@ -1,8 +1,8 @@
 # Element-Admin 是基于ElementUI二次封装的Vue组件库
 
-- <a style="color: red;" href="http://element-cn.eleme.io/#/zh-CN/component/installation" target="_blank">未详细说明的组件请参考ElementUI官方文档，使用其相关特性</a>
+- <a style="color: red;" href="//element-cn.eleme.io/#/zh-CN/component/installation" target="_blank">未详细说明的组件请参考ElementUI官方文档，使用其相关特性</a>
 
-- <a style="color: red;" href="http://gitlab.tf56.lo/YantaoLu/tf-vue" target="_blank">完整项目代码样例</a> &gt; <a style="color: red;" href="https://github.com/yantaolu/tf-vue/archive/master.zip">Download demo source code</a>
+- <a style="color: red;" href="//github.com/yantaolu/ea-demo" target="_blank">完整项目代码样例</a> &gt; <a style="color: red;" href="//github.com/yantaolu/ea-demo/archive/master.zip">Download demo source code</a>
 
 - npm 安装
 
